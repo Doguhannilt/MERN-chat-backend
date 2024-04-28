@@ -1,5 +1,6 @@
 const User = require("../models/userModel")
 const bcryptjs = require("bcrypt")
+const generateToken = require("../utils/Token")
 
 exports.loginUser = (req,res) => {
     console.log("LoginUser")
@@ -40,7 +41,7 @@ exports.signupUser = async (req,res) => {
 
     if(newUser) {
     // Generate JWT token here
-    
+    generateToken(newUser._id,res)
     await newUser.save()
 
     res.status(201).json({
