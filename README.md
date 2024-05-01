@@ -1,1 +1,1 @@
-This repository is stands for Mern Chat backend practice
+This repository is dedicated to practicing the backend development of a MERN (MongoDB, Express.js, React, and Node.js) Chat application. It serves as an ideal learning and experimentation environment for developers interested in mastering real-time communication and database interactions within the MERN stack.
